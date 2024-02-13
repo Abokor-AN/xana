@@ -14,7 +14,10 @@ import { cn } from "@/lib/utils";
 export function Sidebar({ className, ...props }) {
   return (
     <div
-      className={cn("flex items-center justify-center", className)}
+      className={cn(
+        "flex items-center justify-center md:items-start",
+        className
+      )}
       {...props}
     >
       <ToggleGroup type="single" className="flex md:flex-col">
