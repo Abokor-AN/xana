@@ -14,7 +14,7 @@ export default function Home() {
           content<ModeToggle></ModeToggle>
         </div>
         <Sidebar
-          className={"h-20 w-full md:h-full md:w-16 md:order-first"}
+          className={"h-20 w-full md:h-full md:w-10 md:order-first"}
         ></Sidebar>
       </ResponsiveDivLayout>
     </>

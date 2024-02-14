@@ -2,10 +2,7 @@
 
 import * as React from "react";
 
-import {
-  ToggleGroup,
-  ToggleGroupItem,
-} from "@/components/shadcn-ui/toggle-group";
+import { Button } from "@/components/shadcn-ui/button";
 
 import { Bold, Italic, Underline } from "lucide-react";
 
@@ -15,22 +12,32 @@ export function Sidebar({ className, ...props }) {
   return (
     <div
       className={cn(
-        "flex items-center justify-center md:items-start",
+        "p-px flex items-center justify-center md:flex-col md:items-start md:justify-start",
         className
       )}
       {...props}
     >
-      <ToggleGroup type="single" className="flex md:flex-col">
-        <ToggleGroupItem value="bold" aria-label="Toggle bold">
-          <Bold className="h-4 w-4" />
-        </ToggleGroupItem>
-        <ToggleGroupItem value="italic" aria-label="Toggle italic">
-          <Italic className="h-4 w-4" />
-        </ToggleGroupItem>
-        <ToggleGroupItem value="underline" aria-label="Toggle underline">
-          <Underline className="h-4 w-4" />
-        </ToggleGroupItem>
-      </ToggleGroup>
+      <Button
+        variant="ghost"
+        size="icon"
+        className="border-2 border-l-blue-700 border-t-transparent border-b-transparent border-r-transparent"
+      >
+        <Bold className="h-4 w-4" />
+      </Button>
+      <Button
+        variant="ghost"
+        size="icon"
+        className="border-2 border-l-transparent border-t-transparent border-b-transparent border-r-transparent"
+      >
+        <Italic className="h-4 w-4" />
+      </Button>
+      <Button
+        variant="ghost"
+        size="icon"
+        className="border-2 border-l-transparent border-t-transparent border-b-transparent border-r-transparent"
+      >
+        <Underline className="h-4 w-4" />
+      </Button>
     </div>
   );
 }
