@@ -6,7 +6,10 @@ import { cn } from "@/lib/utils";
 
 export function ResponsiveDivLayout({ className, children, ...props }) {
   return (
-    <div className={cn(className)} {...props}>
+    <div
+      className={cn("h-screen w-sreen flex flex-col md:flex-row", className)}
+      {...props}
+    >
       {children}
     </div>
   );
