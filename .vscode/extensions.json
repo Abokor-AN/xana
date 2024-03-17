@@ -1,7 +1,8 @@
 {
   "recommendations": [
     "Vue.volar",
-    "tauri-apps.tauri-vscode",
-    "rust-lang.rust-analyzer"
+    "ms-playwright.playwright",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
   ]
 }
