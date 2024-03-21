@@ -1,14 +1,15 @@
 {
   "productName": "xana",
   "version": "0.0.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.xana.dev",
   "build": {
     "beforeDevCommand": "npm run dev",
     "devUrl": "http://localhost:1420",
     "beforeBuildCommand": "npm run build",
     "frontendDist": "../dist"
   },
-  "app": {"windows": [
+  "app": {
+    "windows": [
       {
         "title": "xana",
         "width": 800,
