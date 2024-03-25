@@ -2,11 +2,16 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import Greet from "./components/Greet.vue";
+
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+const message = t("the_world");
 </script>
 
 <template>
   <div class="container">
-    <h1>Welcome to Tauri!</h1>
+    <h1>{{ message }}</h1>
 
     <div class="row">
       <a href="https://vitejs.dev" target="_blank">
